@@ -1,0 +1,33 @@
+//WAP to search an elemet in an array whether it exist or not.
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int a[5],i,n,count=0,key;
+	printf("Enter the size of array:\n");
+	scanf("%d",&n);
+	printf("Enter the elements of array:\n");
+	for(i=0;i<n;i++)
+	{
+	scanf("%d",&a[i]);
+	}
+	printf("Enter the element to be searched\n");
+	scanf("%d",&key);
+	for(i=0;i<n;i++)
+	{
+		if(key==a[i])
+		{
+			count++;
+		}
+	}
+	if(count==1)
+	{
+		printf("Element exist\n");
+	}
+	else
+	{
+		printf("Element doesnot exist\n");
+	}
+	getch();
+
+}
